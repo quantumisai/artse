@@ -1,0 +1,9 @@
+# OS
+.DS_Store
+
+# gstack / tooling state
+.gstack/
+
+# logs & deps
+*.log
+node_modules/

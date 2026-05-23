@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Artsé Academy — PMU Training | Artsé Aesthetics</title>
+<meta name="description" content="Permanent makeup training and certification with Sherri: ombré/powder brows, microblading, both techniques, and advanced training." />
+<link rel="canonical" href="https://www.artseaesthetics.com/training.html" />
+<meta name="theme-color" content="#221A14" />
+<meta name="robots" content="index, follow" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Artsé Aesthetics" />
+<meta property="og:title" content="The Artsé Academy — PMU Training | Artsé Aesthetics" />
+<meta property="og:description" content="Permanent makeup training and certification with Sherri: ombré/powder brows, microblading, both techniques, and advanced training." />
+<meta property="og:url" content="https://www.artseaesthetics.com/training.html" />
+<meta property="og:image" content="https://www.artseaesthetics.com/assets/og.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="The Artsé Academy — PMU Training | Artsé Aesthetics" />
+<meta name="twitter:description" content="Permanent makeup training and certification with Sherri: ombré/powder brows, microblading, both techniques, and advanced training." />
+<meta name="twitter:image" content="https://www.artseaesthetics.com/assets/og.jpg" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='7'%20fill='%23221A14'/%3E%3Ctext%20x='16'%20y='23'%20font-family='Georgia,serif'%20font-size='20'%20fill='%23C9A56A'%20text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+<style>
+  .course-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+    margin-top: 56px;
+  }
+  @media (max-width: 720px) {
+    .course-grid { grid-template-columns: 1fr; }
+  }
+  .course-card {
+    background: var(--ivory-2);
+    border: 1px solid var(--line-soft);
+    padding: 40px 36px 44px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: box-shadow .3s var(--ease);
+  }
+  .course-card:hover {
+    box-shadow: var(--shadow-lg);
+  }
+  .course-card .lvl {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--gilt);
+  }
+  .course-card h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(22px, 2.8vw, 30px);
+    color: var(--espresso);
+    letter-spacing: -.01em;
+    margin: 0;
+  }
+  .course-card .desc {
+    color: var(--mocha);
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+  }
+  .course-card .learn-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--taupe);
+    margin: 8px 0 4px;
+  }
+  .course-card .learn-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  .course-card .learn-list li {
+    font-size: 14px;
+    color: var(--cocoa);
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+  }
+  .course-card .learn-list li::before {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 1px;
+    background: var(--gilt);
+    flex-shrink: 0;
+    position: relative;
+    top: -3px;
+  }
+  .course-card .card-foot {
+    margin-top: auto;
+    padding-top: 20px;
+  }
+  .popular-badge {
+    background: var(--gilt);
+    color: var(--ivory);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 2px;
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+  .whats-included {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    margin-top: 48px;
+  }
+  @media (max-width: 900px) {
+    .whats-included { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 480px) {
+    .whats-included { grid-template-columns: 1fr; }
+  }
+  .included-item {
+    background: var(--espresso);
+    padding: 36px 28px 40px;
+    color: var(--ivory);
+  }
+  .included-item .i-icon {
+    width: 36px;
+    height: 1px;
+    background: var(--gilt);
+    margin-bottom: 20px;
+  }
+  .included-item h4 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--ivory);
+    letter-spacing: -.01em;
+    margin: 0 0 10px;
+  }
+  .included-item p {
+    font-size: 14px;
+    color: rgba(247,241,232,.65);
+    line-height: 1.7;
+    margin: 0;
+  }
+</style>
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <div class="announce">Now booking 2026 appointments &nbsp;·&nbsp; <span>New client rates</span> &nbsp;·&nbsp; Falls Church, Virginia</div>
+
+  <header id="header">
+    <div class="wrap nav">
+      <a href="index.html" class="brand" aria-label="Artsé Aesthetics home"><img src="assets/logo-dark.png" alt="Artsé Aesthetics" /></a>
+      <nav>
+        <ul class="menu">
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="melanin-care.html">Melanin Care</a></li>
+          <li><a href="training.html">Training</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a href="tel:240-614-2361" class="nav-phone">240·614·2361</a>
+        <a href="https://app.acuityscheduling.com/schedule.php?owner=15010586" class="btn btn-solid">Book Now <span class="arrow">→</span></a>
+        <button class="burger" aria-label="Open menu" aria-controls="mnav" aria-expanded="false" onclick="toggleMenu(true)"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mnav" id="mnav" aria-hidden="true">
+    <span class="mlogo"><img src="assets/logo-light.png" alt="Artsé Aesthetics" /></span>
+    <button class="mnav-close" aria-label="Close menu" onclick="toggleMenu(false)">&times;</button>
+    <nav>
+      <a href="services.html" onclick="toggleMenu(false)">Services</a>
+      <a href="about.html" onclick="toggleMenu(false)">About</a>
+      <a href="melanin-care.html" onclick="toggleMenu(false)">Melanin Care</a>
+      <a href="training.html" onclick="toggleMenu(false)">Training</a>
+      <a href="contact.html" onclick="toggleMenu(false)">Contact</a>
+    </nav>
+    <a href="https://app.acuityscheduling.com/schedule.php?owner=15010586" class="btn btn-solid mcta" onclick="toggleMenu(false)">Book Now <span class="arrow">&rarr;</span></a>
+    <div class="mcontact"><a href="tel:240-614-2361">240·614·2361</a> &nbsp;·&nbsp; <a href="mailto:info@artseaesthetics.com">info@artseaesthetics.com</a></div>
+  </div>
+
+<main>
+
+  <!-- Hero -->
+  <section class="pad" style="background:radial-gradient(120% 90% at 88% 6%,rgba(221,183,162,.45),transparent 55%),linear-gradient(160deg,#F8F2E9,#EFE2D2);padding-top:172px;padding-bottom:92px">
+    <div class="wrap">
+      <span class="eyebrow">Training · The Artsé Academy</span>
+      <h1 style="font-size:clamp(46px,7vw,104px);font-weight:300;letter-spacing:-.02em;margin-top:18px;max-width:15ch">Learn the craft</h1>
+      <p style="max-width:540px;color:var(--cocoa);font-size:17px;margin-top:24px">Hands-on permanent makeup education from a working artist with a decade of experience. Build the skills, and the confidence, to create natural, beautiful results.</p>
+    </div>
+  </section>
+
+  <!-- Studio split -->
+  <section class="pad">
+    <div class="wrap">
+      <div class="split">
+        <div class="plate framed reveal">
+          <img src="assets/team.jpg" alt="Artsé training class in the studio" loading="lazy" decoding="async" />
+          <span class="tag">Inside the studio</span>
+        </div>
+        <div class="reveal" style="display:flex;flex-direction:column;justify-content:center;gap:20px;padding:24px 0">
+          <span class="eyebrow">Where you'll learn</span>
+          <p style="font-size:17px;line-height:1.8;color:var(--cocoa)">You won't learn in a classroom that's removed from real practice. Every course takes place inside Sherri's working studio, on the same equipment and setup she uses with clients every day. Cohorts are kept deliberately small so you receive direct, one-on-one guidance rather than watching from a distance.</p>
+          <p style="font-size:17px;line-height:1.8;color:var(--cocoa)">The support doesn't stop at course completion. Mentorship continues after the course ends, so when real questions come up in your own studio, you have someone to ask.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses -->
+  <section class="pad" style="background:var(--ivory-2)">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2><span class="num">01</span>The courses</h2>
+        <p class="right">Choose the level that fits where you are</p>
+      </div>
+
+      <div class="course-grid">
+
+        <!-- Ombré / Powder Brows -->
+        <div class="course-card reveal" id="ombre">
+          <span class="lvl">Foundation</span>
+          <h3>Ombré / Powder Brows</h3>
+          <p class="desc">Master the powder and ombré technique end to end: skin theory, pigment selection, machine work, shaping and healed results.</p>
+          <p class="learn-label">You'll learn</p>
+          <ul class="learn-list">
+            <li>Brow mapping &amp; shaping</li>
+            <li>Machine shading technique</li>
+            <li>Pigment &amp; skin theory</li>
+          </ul>
+          <div class="card-foot">
+            <a href="https://app.acuityscheduling.com/schedule.php?owner=15010586&calendarID=3821626" class="btn btn-solid">Enroll <span class="arrow">→</span></a>
+          </div>
+        </div>
+
+        <!-- Microblading -->
+        <div class="course-card reveal" id="microblading">
+          <span class="lvl">Foundation</span>
+          <h3>Microblading</h3>
+          <p class="desc">Build precision and confidence with the manual blade: stroke patterns, mapping and the artistry behind natural, hair-like brows.</p>
+          <p class="learn-label">You'll learn</p>
+          <ul class="learn-list">
+            <li>Blade handling &amp; stroke patterns</li>
+            <li>Symmetry &amp; mapping</li>
+            <li>Aftercare &amp; healed expectations</li>
+          </ul>
+          <div class="card-foot">
+            <a href="https://app.acuityscheduling.com/schedule.php?owner=15010586&calendarID=3821626" class="btn btn-solid">Enroll <span class="arrow">→</span></a>
+          </div>
+        </div>
+
+        <!-- Both Techniques -->
+        <div class="course-card reveal" id="both">
+          <span class="lvl">Comprehensive <span class="popular-badge">Most popular</span></span>
+          <h3>Both Techniques</h3>
+          <p class="desc">The complete brow education: combine microblading and powder shading to offer clients the full combo-brow experience.</p>
+          <p class="learn-label">You'll learn</p>
+          <ul class="learn-list">
+            <li>Both core techniques</li>
+            <li>How to combine them</li>
+            <li>Building a brow service menu</li>
+          </ul>
+          <div class="card-foot">
+            <a href="https://app.acuityscheduling.com/schedule.php?owner=15010586&calendarID=3821626" class="btn btn-solid">Enroll <span class="arrow">→</span></a>
+          </div>
+        </div>
+
+        <!-- Advance Training -->
+        <div class="course-card reveal" id="advance">
+          <span class="lvl">Advanced · Certification required</span>
+          <h3>Advance Training</h3>
+          <p class="desc">For certified artists ready to refine, troubleshoot and reach a master level of finish and consistency.</p>
+          <p class="learn-label">You'll learn</p>
+          <ul class="learn-list">
+            <li>Color correction &amp; problem-solving</li>
+            <li>Consistency at speed</li>
+            <li>Advanced shaping</li>
+          </ul>
+          <div class="card-foot">
+            <a href="https://app.acuityscheduling.com/schedule.php?owner=15010586&calendarID=3821626" class="btn btn-solid">Enroll <span class="arrow">→</span></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- What's included -->
+  <section class="pad">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2><span class="num">02</span>What's included</h2>
+        <p class="right">Every course is built to set you up</p>
+      </div>
+      <div class="whats-included">
+        <div class="included-item reveal">
+          <div class="i-icon"></div>
+          <h4>Hands-on practice</h4>
+          <p>You work on live practice with Sherri present and guiding every step, not just watching a demonstration.</p>
+        </div>
+        <div class="included-item reveal">
+          <div class="i-icon"></div>
+          <h4>Certificate of completion</h4>
+          <p>A certificate issued on successful course completion, ready to accompany your portfolio and insurance applications.</p>
+        </div>
+        <div class="included-item reveal">
+          <div class="i-icon"></div>
+          <h4>Ongoing mentorship</h4>
+          <p>Post-course support so you have a trusted resource when real client situations and questions arise.</p>
+        </div>
+        <div class="included-item reveal">
+          <div class="i-icon"></div>
+          <h4>Product orientation</h4>
+          <p>An introduction to the tools, pigments and setup you'll rely on, so you leave confident about your workspace.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing CTA -->
+  <section class="cta pad-lg">
+    <div class="glow"></div>
+    <div class="wrap inner reveal">
+      <span class="eyebrow">Start your PMU journey</span>
+      <h2>Turn your passion into a <em>career.</em></h2>
+      <p>Reserve your spot in an upcoming course or reach out with any questions about the program.</p>
+      <div class="cta-actions">
+        <a href="https://app.acuityscheduling.com/schedule.php?owner=15010586&calendarID=3821626" class="btn btn-light">Enroll now <span class="arrow">→</span></a>
+        <a href="tel:240-614-2361" class="btn btn-ghost" style="border-color:rgba(255,255,255,.3);color:var(--ivory)">Call 240·614·2361</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+  <!-- Footer -->
+  <footer class="foot" id="contact">
+    <div class="wrap">
+      <div class="foot-top">
+        <div>
+          <a href="index.html" class="brand"><img src="assets/logo-light.png" alt="Artsé Aesthetics" /></a>
+          <p class="blurb">Luxury permanent makeup and brow artistry for every shade of beautiful. By appointment in Falls Church, Virginia.</p>
+        </div>
+        <div>
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Sherri</a></li>
+            <li><a href="melanin-care.html">Melanin Care</a></li>
+            <li><a href="training.html">Training</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Care &amp; Info</h5>
+          <ul>
+            <li><a href="aftercare.html#brow">Brow Care</a></li>
+            <li><a href="aftercare.html#lip">Lip Care</a></li>
+            <li><a href="aftercare.html#eyeliner">Eyeliner Care</a></li>
+            <li><a href="policies.html#payment">Payment Plans</a></li>
+            <li><a href="policies.html">Policies</a></li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h5>Get in touch</h5>
+          <a href="mailto:info@artseaesthetics.com">info@artseaesthetics.com</a>
+          <a href="tel:240-614-2361">240·614·2361</a>
+          <span>3120 Fairview Park Drive, Suite 110<br>Falls Church, VA 22042</span>
+          <a href="https://www.instagram.com/sherri.artse">Instagram · @sherri.artse</a>
+        </div>
+      </div>
+      <div class="foot-bot">
+        <small>© 2026 Artsé Aesthetics. All rights reserved.</small>
+        <small>Crafted with care · Falls Church, Virginia</small>
+      </div>
+    </div>
+  </footer>
+
+  <a class="book-bar" href="https://app.acuityscheduling.com/schedule.php?owner=15010586">Book your appointment <span>&rarr;</span></a>
+
+  <script src="site.js" defer></script>
+</body>
+</html>
