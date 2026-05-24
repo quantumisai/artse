@@ -369,9 +369,12 @@
   }
   @media(max-width:760px){
     .wrap{padding:0 22px}
-    header{top:30px}
-    .menu,.nav-phone{display:none}
+    header{top:52px}
+    .menu,.nav-phone,.nav-cta .btn-solid{display:none}
+    .announce{font-size:10px;letter-spacing:.1em;padding:9px 14px;line-height:1.5}
+    .nav{height:66px}
     .burger{display:flex}
+    .brand img{height:34px}
     .pad,.pad-lg{padding:80px 0}
     .svc{grid-template-columns:1fr;gap:12px;padding:30px 6px}
     .svc .idx,.svc .go{display:none}
