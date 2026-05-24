@@ -82,14 +82,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="theme-dark">
   <div class="progress" id="progress"></div>
 
   <div class="announce">Now booking 2026 appointments &nbsp;·&nbsp; <span>New client rates</span> &nbsp;·&nbsp; Falls Church, Virginia</div>
 
   <header id="header">
     <div class="wrap nav">
-      <a href="index.html" class="brand" aria-label="Artsé Aesthetics home"><img src="assets/logo-dark.png" alt="Artsé Aesthetics" /></a>
+      <a href="index.html" class="brand" aria-label="Artsé Aesthetics home"><img src="assets/logo-light.png" alt="Artsé Aesthetics" /></a>
       <nav>
         <ul class="menu">
           <li><a href="services.html">Services</a></li>
@@ -125,26 +125,35 @@
   <section class="hero" id="top">
     <div class="hero-grain"></div>
     <div class="hero-orb b" data-parallax="-0.06"></div>
-    <div class="wrap hero-inner">
-      <div class="hero-copy">
-        <span class="eyebrow hero-eyebrow">Artsé Aesthetics <span class="dot">·</span> by Sherri</span>
-        <h1><span class="ln"><i>Step up your</i></span><span class="ln"><i><em>brow game.</em></i></span></h1>
-        <p class="hero-sub">Permanent makeup artistry for every shade of beautiful. Brows, lips and lashes, designed by hand, perfected over a decade.</p>
-        <div class="hero-actions">
-          <a href="https://app.acuityscheduling.com/schedule.php?owner=15010586" class="btn btn-solid">Book your appointment <span class="arrow">→</span></a>
-          <a href="services.html" class="btn btn-ghost">Explore services</a>
+    <span class="hero-ghost" aria-hidden="true">beauty</span>
+    <div class="wrap hero-bold">
+      <span class="eyebrow hero-eyebrow hero-kicker">Artsé Aesthetics — Permanent Makeup &amp; Skin</span>
+      <h1 class="hero-h1" aria-label="Effortless beauty, perfected.">
+        <span class="ln"><i>Effortless</i></span>
+        <span class="ln"><i>beauty,</i></span>
+        <span class="ln"><i><em>perfected.</em></i></span>
+      </h1>
+      <div class="hero-foot">
+        <div class="hero-foot-l">
+          <p class="hero-sub">Brows, lip blush, lashes and Mestyque skin care, hand-crafted for every feature and every shade. A decade of artistry by Sherri.</p>
+          <div class="hero-actions">
+            <a href="https://app.acuityscheduling.com/schedule.php?owner=15010586" class="btn btn-solid magnetic">Book your appointment <span class="arrow">→</span></a>
+            <a href="services.html" class="btn btn-ghost magnetic">Explore services</a>
+          </div>
+          <div class="scroll-cue"><span class="ln2"></span> Scroll to discover</div>
         </div>
-        <div class="scroll-cue"><span class="ln2"></span> Scroll to discover</div>
-      </div>
-      <div class="hero-visual">
-        <div class="hero-frame" data-parallax="0.05">
-          <img src="assets/brow.jpg" alt="Healed combo brows by Artsé Aesthetics" width="640" height="640" style="object-position:center 42%" />
+        <div class="hero-foot-r">
+          <div class="hero-frame" data-parallax="0.05">
+            <img class="hf on" src="assets/brow.jpg" alt="Healed combo brows by Artsé Aesthetics" style="object-position:center 42%" />
+            <img class="hf" src="assets/lip.jpg" alt="Healed lip blush by Artsé Aesthetics" style="object-position:center 70%" />
+            <img class="hf" src="assets/transform.jpg" alt="Brow transformation by Artsé Aesthetics" style="object-position:center 28%" />
+          </div>
+          <figure class="hero-chip">
+            <img src="assets/mesty-product.jpg" alt="Mestyque melanin skin care" width="640" height="724" loading="lazy" />
+            <figcaption class="cap">Now offering<b>Mestyque skin care</b></figcaption>
+          </figure>
+          <div class="hero-badge"><b>10+</b>years<br>of artistry</div>
         </div>
-        <figure class="hero-chip">
-          <img src="assets/lip.jpg" alt="Healed lip blush by Artsé Aesthetics" width="640" height="640" />
-          <figcaption class="cap">Recent work<b>Lip blush, healed</b></figcaption>
-        </figure>
-        <div class="hero-badge"><b>10+</b>years<br>of artistry</div>
       </div>
     </div>
   </section>
@@ -152,8 +161,8 @@
   <!-- Marquee -->
   <div class="marquee">
     <div class="marquee-track">
-      <span>Combo Brows</span><span>Powder &amp; Ombré</span><span>Microblading</span><span>Lip Blush</span><span>Lash Enhancement</span><span>Brow Lamination</span>
-      <span>Combo Brows</span><span>Powder &amp; Ombré</span><span>Microblading</span><span>Lip Blush</span><span>Lash Enhancement</span><span>Brow Lamination</span>
+      <span>Combo Brows</span><span>Powder &amp; Ombré</span><span>Microblading</span><span>Lip Blush</span><span>Lash Enhancement</span><span>Brow Lamination</span><span>Mestyque Skin</span>
+      <span>Combo Brows</span><span>Powder &amp; Ombré</span><span>Microblading</span><span>Lip Blush</span><span>Lash Enhancement</span><span>Brow Lamination</span><span>Mestyque Skin</span>
     </div>
   </div>
 
@@ -244,7 +253,7 @@
           <div class="item reveal"><div class="divline"></div><div class="ic">i</div><h4>Non-invasive &amp; needle-free</h4><p>A Korean melanin-care treatment with no needles, no lasers and no downtime, gentle enough for sensitive skin.</p></div>
           <div class="item reveal"><div class="divline"></div><div class="ic">ii</div><h4>Brightens dark, uneven areas</h4><p>Mestyque ampoules and light therapy lighten hyperpigmentation in sensitive, hard-to-treat zones.</p></div>
           <div class="item reveal"><div class="divline"></div><div class="ic">iii</div><h4>Restores your natural tone</h4><p>It works with your skin's own renewal to reveal a healthier, more even tone, never a temporary cover-up.</p></div>
-          <a href="melanin-care.html" class="btn btn-ghost reveal" style="align-self:flex-start;margin-top:6px;border-color:rgba(247,241,232,.3);color:var(--ivory)">Discover Mestyque <span class="arrow">→</span></a>
+          <a href="melanin-care.html" class="btn btn-ghost reveal" style="align-self:flex-start;margin-top:6px;border-color:rgba(247,241,232,.3);color:var(--espresso)">Discover Mestyque <span class="arrow">→</span></a>
         </div>
         <div class="ethos-media reveal" style="display:block;height:clamp(380px,46vw,540px)">
           <figure class="em-main" style="height:100%"><img src="assets/mesty-product.jpg" alt="Mestyque melanin-care ampoules" loading="lazy" decoding="async" /><figcaption>Mestyque · Korean melanin-care</figcaption></figure>
@@ -375,7 +384,7 @@
       <p>Book a consultation and first session online, or reach out with any questions. Payment plans available.</p>
       <div class="cta-actions">
         <a href="https://app.acuityscheduling.com/schedule.php?owner=15010586" class="btn btn-light">Book online <span class="arrow">→</span></a>
-        <a href="tel:240-614-2361" class="btn btn-ghost" style="border-color:rgba(255,255,255,.3);color:var(--ivory)">Call 240·614·2361</a>
+        <a href="tel:240-614-2361" class="btn btn-ghost" style="border-color:rgba(255,255,255,.3);color:var(--espresso)">Call 240·614·2361</a>
       </div>
     </div>
   </section>

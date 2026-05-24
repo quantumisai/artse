@@ -56,4 +56,27 @@
     list.addEventListener('mousemove',e=>{tx=e.clientX;ty=e.clientY;if(cx===0){cx=tx;cy=ty;}});
     list.addEventListener('mouseleave',()=>{if(raf){cancelAnimationFrame(raf);raf=null;}});
   }
+
+  // hero image crossfade
+  var hfs=[].slice.call(document.querySelectorAll('.hero-frame .hf'));
+  if(!reduce && hfs.length>1){
+    var hi=0;
+    setInterval(function(){
+      hfs[hi].classList.remove('on');
+      hi=(hi+1)%hfs.length;
+      hfs[hi].classList.add('on');
+    },4200);
+  }
+
+  // magnetic buttons (desktop, pointer-fine)
+  if(!reduce && window.matchMedia('(pointer:fine)').matches){
+    document.querySelectorAll('.magnetic').forEach(function(el){
+      el.addEventListener('mousemove',function(e){
+        var r=el.getBoundingClientRect();
+        var mx=e.clientX-r.left-r.width/2, my=e.clientY-r.top-r.height/2;
+        el.style.transform='translate('+(mx*0.22).toFixed(1)+'px,'+(my*0.34).toFixed(1)+'px)';
+      });
+      el.addEventListener('mouseleave',function(){el.style.transform='';});
+    });
+  }
 })();
