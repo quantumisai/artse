@@ -33,6 +33,9 @@
   .fin-card p{color:var(--cocoa);font-size:16.5px;line-height:1.75;max-width:62ch;margin:0}
   .fin-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px}
   .fin-fine{font-size:12.5px;color:var(--mocha);max-width:62ch}
+  .calc-card{background:#FBF7F0;border-radius:18px;padding:clamp(18px,3vw,34px);box-shadow:var(--shadow-lg);max-width:760px;margin:0 auto;border:1px solid rgba(243,234,217,.12)}
+  .calc-card #calculator{min-height:120px}
+  .calc-note{text-align:center;margin-top:18px;font-size:12.5px;color:var(--mocha)}
   .fin-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
   .fin-step{padding-top:22px;border-top:2px solid var(--gilt)}
   .fin-step .n{font-family:'Fraunces',serif;font-style:italic;font-size:15px;color:var(--gilt)}
@@ -108,11 +111,25 @@
     </div>
   </section>
 
+  <!-- Cherry calculator -->
+  <section class="pad" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2><span class="num">01</span>Estimate your payment</h2>
+        <p class="right">Preview your monthly options in seconds with Cherry's calculator. No commitment, no credit impact.</p>
+      </div>
+      <div class="calc-card reveal">
+        <div id="calculator"></div>
+      </div>
+      <p class="calc-note">Live estimate from Cherry. Final terms are shown when you apply.</p>
+    </div>
+  </section>
+
   <!-- How it works -->
   <section class="pad" style="background:var(--sand)">
     <div class="wrap">
       <div class="sec-head reveal">
-        <h2><span class="num">01</span>How it works</h2>
+        <h2><span class="num">02</span>How it works</h2>
         <p class="right">From application to appointment in minutes, entirely online.</p>
       </div>
       <div class="fin-steps">
@@ -128,7 +145,7 @@
   <section class="pad">
     <div class="wrap">
       <div class="sec-head reveal">
-        <h2><span class="num">02</span>Good to know</h2>
+        <h2><span class="num">03</span>Good to know</h2>
         <p class="right">A few common questions about paying over time.</p>
       </div>
       <div class="faq-list reveal">
@@ -202,5 +219,10 @@
   <a class="book-bar" href="https://app.acuityscheduling.com/schedule.php?owner=15010586">Book your appointment <span>&rarr;</span></a>
 
   <script src="site.js" defer></script>
+  <!-- Cherry financing calculator -->
+  <script>
+  (function(w,d,s,o,f,js,fjs){w[o]=w[o]||function(){(w[o].q=w[o].q||[]).push(arguments)};(js=d.createElement(s)),(fjs=d.getElementsByTagName(s)[0]);js.id=o;js.src=f;js.async=1;fjs.parentNode.insertBefore(js,fjs)})(window,document,"script","_hw","https://files.withcherry.com/widgets/widget.js");
+  _hw("init",{debug:false,variables:{slug:'artseaesthetics',name:'Artsé Aesthetics'},styles:{primaryColor:'#221A14',secondaryColor:'#221A1410',fontFamily:'Inter'}},["calculator"]);
+  </script>
 </body>
 </html>
