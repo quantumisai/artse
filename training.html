@@ -159,6 +159,48 @@
     line-height: 1.7;
     margin: 0;
   }
+  /* In-studio film showcase */
+  .film-feature { margin-top: 56px; }
+  .film-plate {
+    position: relative;
+    overflow: hidden;
+    background: #120E0A;
+    box-shadow: var(--shadow-lg);
+  }
+  .film-plate video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: #120E0A;
+  }
+  .film-feature video { aspect-ratio: 16 / 9; }
+  .film-tall video { aspect-ratio: 9 / 13; }
+  .film-duo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    margin-top: 2px;
+  }
+  @media (max-width: 480px) {
+    .film-duo { grid-template-columns: 1fr; }
+  }
+  .film-tag {
+    position: absolute;
+    left: 18px;
+    bottom: 16px;
+    background: rgba(34,26,20,.62);
+    color: #fff;
+    backdrop-filter: blur(4px);
+    font-family: 'Inter', sans-serif;
+    font-size: 10.5px;
+    font-weight: 500;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 2px;
+    pointer-events: none;
+  }
 </style>
 </head>
 <body class="theme-dark">
@@ -221,6 +263,32 @@
           <span class="eyebrow">Where you'll learn</span>
           <p style="font-size:17px;line-height:1.8;color:var(--cocoa)">You won't learn in a classroom that's removed from real practice. Every course takes place inside Sherri's working studio, on the same equipment and setup she uses with clients every day. Cohorts are kept deliberately small so you receive direct, one-on-one guidance rather than watching from a distance.</p>
           <p style="font-size:17px;line-height:1.8;color:var(--cocoa)">The support doesn't stop at course completion. Mentorship continues after the course ends, so when real questions come up in your own studio, you have someone to ask.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- In motion -->
+  <section class="pad" style="background:radial-gradient(120% 95% at 16% -10%,rgba(150,112,64,.22),transparent 55%),linear-gradient(165deg,#1D1810,#120E0A);color:var(--ivory)">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2 style="color:var(--ivory)">In motion</h2>
+        <p class="right" style="color:rgba(247,241,232,.62)">A look at the hands-on work, recorded inside the studio</p>
+      </div>
+
+      <div class="film-feature film-plate reveal">
+        <video src="assets/video/training-demo.mp4" title="Permanent makeup technique demonstrated start to finish in the studio" autoplay muted loop playsinline preload="metadata" controls></video>
+        <span class="film-tag">The technique, start to finish</span>
+      </div>
+
+      <div class="film-duo">
+        <div class="film-plate film-tall reveal">
+          <video src="assets/video/training-detail.mp4" title="Close detail of brow stroke and shading work" autoplay muted loop playsinline preload="metadata" controls></video>
+          <span class="film-tag">Stroke &amp; shading detail</span>
+        </div>
+        <div class="film-plate film-tall reveal">
+          <video src="assets/video/training-closeup.mp4" title="Up-close view of the permanent makeup procedure" autoplay muted loop playsinline preload="metadata" controls></video>
+          <span class="film-tag">Up close</span>
         </div>
       </div>
     </div>
