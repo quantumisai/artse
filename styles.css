@@ -290,7 +290,7 @@
   .foot .contact a,.foot .contact span{display:block;color:rgba(247,241,232,.72);font-size:14.5px;margin-bottom:12px}
   .foot .contact a:hover{color:var(--gilt-2)}
   .foot-bot{display:flex;justify-content:space-between;align-items:center;padding-top:32px;flex-wrap:wrap;gap:14px}
-  .foot-bot small{color:rgba(247,241,232,.45);font-size:12px}
+  .foot-bot small{color:rgba(247,241,232,.6);font-size:12px}
 
   /* testimonials */
   .testi{background:var(--sand)}
